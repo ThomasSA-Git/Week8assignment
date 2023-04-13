@@ -77,7 +77,7 @@ public class RemoteApiTester implements CommandLineRunner {
     List<String> randoms = rs.block(); //We only block when all the three Mono's has fulfilled
     System.out.println(randoms.stream().collect(Collectors.joining(",")));
   }
-
+/*
   Mono<Gender> getGenderForName(String name) {
     WebClient client = WebClient.create();
     Mono<Gender> gender = client.get()
@@ -174,7 +174,7 @@ public class RemoteApiTester implements CommandLineRunner {
 
           return response;
     }
-  }
+  }*/
 
 
   @Override
